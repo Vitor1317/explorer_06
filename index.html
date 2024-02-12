@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Staatliches&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>Avalie a sua mentoria</h1>
+        <p>Chegou a hora de avaliar o seu mentor. Borá lá?</p>
+        <img src="./assets/img1.svg" alt="">
+    </header>
+
+    <main>
+        <h2>Informações pessoais</h2>
+        <form action="">
+            <div class="flex-inputs">
+                <div class="input-container flex1">
+                    <label for="name">Nome</label>
+                    <input id="name" type="text">
+                </div>
+    
+                <div class="input-container flex1">
+                    <label for="sobrenome">Sobrenome <span>(Digite um email válido)</span></label>
+                    <input id="sobrenome" type="text">
+                </div>
+            </div>
+
+            <div class="input-container mt">
+                <label for="email">Email</label>
+                <input id="email" type="email">
+            </div>
+
+            <h2>Informações do mentor</h2>
+
+            <div class="input-container">
+                <label for="mentor">Selecione quem foi o seu mentor</label>
+                <input id="mentor" type="text">
+            </div>
+
+            <div class="input-container">
+                <label for="feedback">Feedback sobre o mentor</label>
+                <textarea id="feedback"></textarea>
+            </div>
+
+            <div class="input-checkbox">
+                <input type="checkbox" name="" id="check" />
+                <label for="check">Todas as minhas dúvidas foram esclarecidas durante a mentoria.</label>
+            </div>
+
+            <h2>Agendando próxima mentoria</h2>
+
+            <div class="flex-inputs">
+                <div class="input-container flex1">
+                    <label for="data">Data <span>(DD/MM/AAAA)</span></label>
+                    <input id="data" type="text">
+                </div>
+                <div class=" flex-inputs flex1">
+                    <div class="input-container flex1">
+                        <label for="start">Das</label>
+                        <input id="start" type="time">
+                    </div>
+                    <div class="input-container flex1">
+                        <label for="end">Até</label>
+                        <input id="end" type="time">
+                    </div>
+                </div>
+            </div>
+
+            <button type="submit">Salvar</button>
+        </form>
+    </main>
+
+</body>
+</html>
